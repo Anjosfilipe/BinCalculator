@@ -7,6 +7,7 @@ namespace Bincalculator
     {
         static void Menu()
         {
+            Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine(@"
 
  .o88b.  .d8b.  db       .o88b. db    db db       .d8b.  d8888b.  .d88b.  d8888b.  .d8b.       d8888b. d888888b d8b   db  .d8b.  d8888b. d888888b  .d8b.  
@@ -17,6 +18,7 @@ Y8b  d8 88   88 88booo. Y8b  d8 88b  d88 88booo. 88   88 88  .8D `8b  d8' 88 `88
  `Y88P' YP   YP Y88888P  `Y88P' ~Y8888P' Y88888P YP   YP Y8888D'  `Y88P'  88   YD YP   YP      Y8888P' Y888888P VP   V8P YP   YP 88   YD Y888888P YP   YP 
                                                                                                                                                           
 ");
+            Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("\t\t\t                        Infome a opção Desejada!                          ");
             Console.WriteLine("\t\t\t--------------------------------------------------------------------------");
             Console.WriteLine("\t\t\t|                            [1] ADICAO                                  |");
@@ -45,6 +47,7 @@ Y8b  d8 88   88 88booo. Y8b  d8 88b  d88 88booo. 88   88 88  .8D `8b  d8' 88 `88
             int opc;
             do
             {
+                
                 Console.Clear();
                 Menu();
                 string x = Console.ReadLine();
@@ -56,7 +59,18 @@ Y8b  d8 88   88 88booo. Y8b  d8 88b  d88 88booo. 88   88 88  .8D `8b  d8' 88 `88
                         break;
                     case 1:
                         Console.Clear();
+                        Console.ForegroundColor = ConsoleColor.Cyan;
+                        Console.WriteLine(@"
 
+ .o88b.  .d8b.  db       .o88b. db    db db       .d8b.  d8888b.  .d88b.  d8888b.  .d8b.       d8888b. d888888b d8b   db  .d8b.  d8888b. d888888b  .d8b.  
+d8P  Y8 d8' `8b 88      d8P  Y8 88    88 88      d8' `8b 88  `8D .8P  Y8. 88  `8D d8' `8b      88  `8D   `88'   888o  88 d8' `8b 88  `8D   `88'   d8' `8b 
+8P      88ooo88 88      8P      88    88 88      88ooo88 88   88 88    88 88oobY' 88ooo88      88oooY'    88    88V8o 88 88ooo88 88oobY'    88    88ooo88 
+8b      88~~~88 88      8b      88    88 88      88~~~88 88   88 88    88 88`8b   88~~~88      88~~~b.    88    88 V8o88 88~~~88 88`8b      88    88~~~88 
+Y8b  d8 88   88 88booo. Y8b  d8 88b  d88 88booo. 88   88 88  .8D `8b  d8' 88 `88. 88   88      88   8D   .88.   88  V888 88   88 88 `88.   .88.   88   88 
+ `Y88P' YP   YP Y88888P  `Y88P' ~Y8888P' Y88888P YP   YP Y8888D'  `Y88P'  88   YD YP   YP      Y8888P' Y888888P VP   V8P YP   YP 88   YD Y888888P YP   YP 
+                                                                                                                                                          
+");
+                        Console.ForegroundColor = ConsoleColor.White;
                         Console.Write("Infome o 1º valor Desejado: \n");
                         string number1 = Console.ReadLine();
                         string newNumberBin1 = ConvertHexaforBin(number1);
@@ -72,7 +86,18 @@ Y8b  d8 88   88 88booo. Y8b  d8 88b  d88 88booo. 88   88 88  .8D `8b  d8' 88 `88
                         break;
                     case 2:
                         Console.Clear();
+                        Console.ForegroundColor = ConsoleColor.Cyan;
+                        Console.WriteLine(@"
 
+ .o88b.  .d8b.  db       .o88b. db    db db       .d8b.  d8888b.  .d88b.  d8888b.  .d8b.       d8888b. d888888b d8b   db  .d8b.  d8888b. d888888b  .d8b.  
+d8P  Y8 d8' `8b 88      d8P  Y8 88    88 88      d8' `8b 88  `8D .8P  Y8. 88  `8D d8' `8b      88  `8D   `88'   888o  88 d8' `8b 88  `8D   `88'   d8' `8b 
+8P      88ooo88 88      8P      88    88 88      88ooo88 88   88 88    88 88oobY' 88ooo88      88oooY'    88    88V8o 88 88ooo88 88oobY'    88    88ooo88 
+8b      88~~~88 88      8b      88    88 88      88~~~88 88   88 88    88 88`8b   88~~~88      88~~~b.    88    88 V8o88 88~~~88 88`8b      88    88~~~88 
+Y8b  d8 88   88 88booo. Y8b  d8 88b  d88 88booo. 88   88 88  .8D `8b  d8' 88 `88. 88   88      88   8D   .88.   88  V888 88   88 88 `88.   .88.   88   88 
+ `Y88P' YP   YP Y88888P  `Y88P' ~Y8888P' Y88888P YP   YP Y8888D'  `Y88P'  88   YD YP   YP      Y8888P' Y888888P VP   V8P YP   YP 88   YD Y888888P YP   YP 
+                                                                                                                                                          
+");
+                        Console.ForegroundColor = ConsoleColor.White;
                         Console.Write("Infome o 1º valor Desejado: \n");
                         number1 = Console.ReadLine();
                         newNumberBin1 = ConvertHexaforBin(number1);
@@ -88,7 +113,18 @@ Y8b  d8 88   88 88booo. Y8b  d8 88b  d88 88booo. 88   88 88  .8D `8b  d8' 88 `88
                         break;
                     case 3:
                         Console.Clear();
+                        Console.ForegroundColor = ConsoleColor.Cyan;
+                        Console.WriteLine(@"
 
+ .o88b.  .d8b.  db       .o88b. db    db db       .d8b.  d8888b.  .d88b.  d8888b.  .d8b.       d8888b. d888888b d8b   db  .d8b.  d8888b. d888888b  .d8b.  
+d8P  Y8 d8' `8b 88      d8P  Y8 88    88 88      d8' `8b 88  `8D .8P  Y8. 88  `8D d8' `8b      88  `8D   `88'   888o  88 d8' `8b 88  `8D   `88'   d8' `8b 
+8P      88ooo88 88      8P      88    88 88      88ooo88 88   88 88    88 88oobY' 88ooo88      88oooY'    88    88V8o 88 88ooo88 88oobY'    88    88ooo88 
+8b      88~~~88 88      8b      88    88 88      88~~~88 88   88 88    88 88`8b   88~~~88      88~~~b.    88    88 V8o88 88~~~88 88`8b      88    88~~~88 
+Y8b  d8 88   88 88booo. Y8b  d8 88b  d88 88booo. 88   88 88  .8D `8b  d8' 88 `88. 88   88      88   8D   .88.   88  V888 88   88 88 `88.   .88.   88   88 
+ `Y88P' YP   YP Y88888P  `Y88P' ~Y8888P' Y88888P YP   YP Y8888D'  `Y88P'  88   YD YP   YP      Y8888P' Y888888P VP   V8P YP   YP 88   YD Y888888P YP   YP 
+                                                                                                                                                          
+");
+                        Console.ForegroundColor = ConsoleColor.White;
                         Console.Write("Infome o 1º valor Desejado: \n");
                         number1 = Console.ReadLine();
                         newNumberBin1 = ConvertHexaforBin(number1);
@@ -104,7 +140,18 @@ Y8b  d8 88   88 88booo. Y8b  d8 88b  d88 88booo. 88   88 88  .8D `8b  d8' 88 `88
                         break;
                     case 4:
                         Console.Clear();
+                        Console.ForegroundColor = ConsoleColor.Cyan;
+                        Console.WriteLine(@"
 
+ .o88b.  .d8b.  db       .o88b. db    db db       .d8b.  d8888b.  .d88b.  d8888b.  .d8b.       d8888b. d888888b d8b   db  .d8b.  d8888b. d888888b  .d8b.  
+d8P  Y8 d8' `8b 88      d8P  Y8 88    88 88      d8' `8b 88  `8D .8P  Y8. 88  `8D d8' `8b      88  `8D   `88'   888o  88 d8' `8b 88  `8D   `88'   d8' `8b 
+8P      88ooo88 88      8P      88    88 88      88ooo88 88   88 88    88 88oobY' 88ooo88      88oooY'    88    88V8o 88 88ooo88 88oobY'    88    88ooo88 
+8b      88~~~88 88      8b      88    88 88      88~~~88 88   88 88    88 88`8b   88~~~88      88~~~b.    88    88 V8o88 88~~~88 88`8b      88    88~~~88 
+Y8b  d8 88   88 88booo. Y8b  d8 88b  d88 88booo. 88   88 88  .8D `8b  d8' 88 `88. 88   88      88   8D   .88.   88  V888 88   88 88 `88.   .88.   88   88 
+ `Y88P' YP   YP Y88888P  `Y88P' ~Y8888P' Y88888P YP   YP Y8888D'  `Y88P'  88   YD YP   YP      Y8888P' Y888888P VP   V8P YP   YP 88   YD Y888888P YP   YP 
+                                                                                                                                                          
+");
+                        Console.ForegroundColor = ConsoleColor.White;
                         Console.Write("Infome o 1º valor Desejado: \n");
                         number1 = Console.ReadLine();
                         newNumberBin1 = ConvertHexaforBin(number1);
@@ -119,6 +166,18 @@ Y8b  d8 88   88 88booo. Y8b  d8 88b  d88 88booo. 88   88 88  .8D `8b  d8' 88 `88
                         Console.ReadKey();
                         break;
                     case 5:
+                        Console.ForegroundColor = ConsoleColor.Cyan;
+                        Console.WriteLine(@"
+
+ .o88b.  .d8b.  db       .o88b. db    db db       .d8b.  d8888b.  .d88b.  d8888b.  .d8b.       d8888b. d888888b d8b   db  .d8b.  d8888b. d888888b  .d8b.  
+d8P  Y8 d8' `8b 88      d8P  Y8 88    88 88      d8' `8b 88  `8D .8P  Y8. 88  `8D d8' `8b      88  `8D   `88'   888o  88 d8' `8b 88  `8D   `88'   d8' `8b 
+8P      88ooo88 88      8P      88    88 88      88ooo88 88   88 88    88 88oobY' 88ooo88      88oooY'    88    88V8o 88 88ooo88 88oobY'    88    88ooo88 
+8b      88~~~88 88      8b      88    88 88      88~~~88 88   88 88    88 88`8b   88~~~88      88~~~b.    88    88 V8o88 88~~~88 88`8b      88    88~~~88 
+Y8b  d8 88   88 88booo. Y8b  d8 88b  d88 88booo. 88   88 88  .8D `8b  d8' 88 `88. 88   88      88   8D   .88.   88  V888 88   88 88 `88.   .88.   88   88 
+ `Y88P' YP   YP Y88888P  `Y88P' ~Y8888P' Y88888P YP   YP Y8888D'  `Y88P'  88   YD YP   YP      Y8888P' Y888888P VP   V8P YP   YP 88   YD Y888888P YP   YP 
+                                                                                                                                                          
+");
+                        Console.ForegroundColor = ConsoleColor.White;
                         Console.Write("Infome o valor Desejado: \n");
                         number1 = Console.ReadLine();
                         newNumberBin1 = ConvertHexaforBin(number1);
@@ -127,6 +186,18 @@ Y8b  d8 88   88 88booo. Y8b  d8 88b  d88 88booo. 88   88 88  .8D `8b  d8' 88 `88
                         Console.ReadKey();
                         break;
                     case 6:
+                        Console.ForegroundColor = ConsoleColor.Cyan;
+                        Console.WriteLine(@"
+
+ .o88b.  .d8b.  db       .o88b. db    db db       .d8b.  d8888b.  .d88b.  d8888b.  .d8b.       d8888b. d888888b d8b   db  .d8b.  d8888b. d888888b  .d8b.  
+d8P  Y8 d8' `8b 88      d8P  Y8 88    88 88      d8' `8b 88  `8D .8P  Y8. 88  `8D d8' `8b      88  `8D   `88'   888o  88 d8' `8b 88  `8D   `88'   d8' `8b 
+8P      88ooo88 88      8P      88    88 88      88ooo88 88   88 88    88 88oobY' 88ooo88      88oooY'    88    88V8o 88 88ooo88 88oobY'    88    88ooo88 
+8b      88~~~88 88      8b      88    88 88      88~~~88 88   88 88    88 88`8b   88~~~88      88~~~b.    88    88 V8o88 88~~~88 88`8b      88    88~~~88 
+Y8b  d8 88   88 88booo. Y8b  d8 88b  d88 88booo. 88   88 88  .8D `8b  d8' 88 `88. 88   88      88   8D   .88.   88  V888 88   88 88 `88.   .88.   88   88 
+ `Y88P' YP   YP Y88888P  `Y88P' ~Y8888P' Y88888P YP   YP Y8888D'  `Y88P'  88   YD YP   YP      Y8888P' Y888888P VP   V8P YP   YP 88   YD Y888888P YP   YP 
+                                                                                                                                                          
+");
+                        Console.ForegroundColor = ConsoleColor.White;
                         Console.Write("Infome o valor Desejado: \n");
                         number1 = Console.ReadLine();
                         Console.Write($"O valor Desejado em Hezadecimal: {ConvertBinforHexa(number1.ToString())}  \n");
